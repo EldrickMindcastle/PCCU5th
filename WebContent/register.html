@@ -62,7 +62,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<div class="login" >
 						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
 						    <div id="loginBox">                
-						        <form id="loginForm">
+						        <form id="loginForm" action="login.jsp" method="post" >
 						                <fieldset id="body">
 						                	<fieldset>
 						                          <label for="email">Email Address</label>
@@ -855,15 +855,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<h2>existing user</h2>
 		 <div class="registration_form">
 		 <!-- Form -->
-			<form id="registration_form" action="" method="post">
+			<form id="registration_form" action="login.jsp" method="post">
 				<div>
 					<label>
-						<input placeholder="email:" type="email" tabindex="3" name = "member_acc" required>
+						<input placeholder="email:" type="email" tabindex="3" name="email" required>
 					</label>
 				</div>
 				<div>
 					<label>
-						<input placeholder="password" type="password" tabindex="4" required>
+						<input placeholder="password" type="password" name="password" tabindex="4" required>
 					</label>
 				</div>						
 				<div>

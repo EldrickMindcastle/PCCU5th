@@ -1,3 +1,13 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>請輸入驗證碼</title>
+</head>
+<body>
+
+<%!String Tip ="註冊成功!請輸入驗證碼!"; %>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8" import="MemberShipDAOlib.*"%>
 <%
@@ -14,7 +24,11 @@
 		dao.add(s);
 		response.sendRedirect("index.html");
 	} else {
-
-		response.sendRedirect("checkout.html");
+		Tip="兩次密碼不相同";
+		response.setHeader("refresh","8;url=register.html");
 	}
 %>
+<font color ="red" size ="28pt"><%=Tip %></font>
+
+</body>
+</html>
