@@ -11,8 +11,7 @@
 		pageEncoding="UTF-8" import="MemberShipDAOlib.*"%>
 	<%
 		String mail = new String(request.getParameter("email").getBytes("ISO-8859-1"), "utf-8");
-		String pw = new String(request.getParameter("password").getBytes("ISO-8859-1"), "utf-8");
-
+		String pw = new String(request.getParameter("password").getBytes("ISO-8859-1"), "utf-8");								
 		if (mail.equals("") || pw.equals("")) {
 			Tip = "帳號或密碼不能空白";
 			response.setHeader("refresh", "8;url=register.html");
