@@ -20,6 +20,7 @@
 			MemberShipDAO dao = new MemberShipDAOImp();
 			Ans = dao.Login(mail, pw);
 			if (Ans == true) {
+				session.setAttribute("member_acc", mail);
 				Tip = "登入成功!將轉至首頁";
 				response.setHeader("refresh", "3;url=index.html");
 			}
