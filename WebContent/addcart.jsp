@@ -22,6 +22,8 @@
   additem.product_id.add(PID);
   }
   
+ // additem.product_id.clear();
+  
   A = additem.getlist();
  
   // print all productID in cart
